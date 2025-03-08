@@ -1,1 +1,16 @@
 build/
+libs/linux64/love
+libs/win64/changes.txt
+libs/win64/game.ico
+libs/win64/license.txt
+libs/win64/love.dll
+libs/win64/love.exe
+libs/win64/love.ico
+libs/win64/lovec.exe
+libs/win64/lua51.dll
+libs/win64/mpg123.dll
+libs/win64/msvcp120.dll
+libs/win64/msvcr120.dll
+libs/win64/readme.txt
+libs/win64/OpenAL32.dll
+libs/win64/SDL2.dll
