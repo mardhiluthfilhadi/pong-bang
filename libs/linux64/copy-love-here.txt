@@ -1,0 +1,6 @@
+Download love from your package manager.
+and do:
+
+```bash
+cp /usr/bin/love .
+```
