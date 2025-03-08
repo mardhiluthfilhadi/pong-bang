@@ -29,7 +29,7 @@ To_Draw draw(void);
 
 local font_score
 local font_debug
-local ball = {}
+local ball_sfx = {}
 
 local BG_CANVAS
 local restart = 0
@@ -38,8 +38,9 @@ local screen = ffi.new("Vec2", 800, 900)
 function love.load()
     font_score=love.graphics.newFont("assets/VictorMono-Medium.otf", 46)
     font_debug=love.graphics.newFont("assets/VictorMono-Medium.otf", 22)
+    
     for i=1, 5 do
-        ball[i]=love.audio.newSource("assets/ball.ogg", "static")
+        ball_sfx[i]=love.audio.newSource("assets/ball.ogg", "static")
     end
 
     local s = test.restart(0)
@@ -85,11 +86,11 @@ function love.update(dt)
         end
     end
 
-    local play_ball = test.update(dt, dir, restart)
-    if play_ball==1 then
+    local play_ball_sfx = test.update(dt, dir, restart)
+    if play_ball_sfx==1 then
         for i=1,5 do
-            if not ball[i]:isPlaying() then
-                love.audio.play(ball[i])
+            if not ball_sfx[i]:isPlaying() then
+                love.audio.play(ball_sfx[i])
                 break
             end
         end
