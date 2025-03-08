@@ -14,3 +14,4 @@ libs/win64/msvcr120.dll
 libs/win64/readme.txt
 libs/win64/OpenAL32.dll
 libs/win64/SDL2.dll
+libs/libtest.so
