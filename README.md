@@ -2,7 +2,7 @@
 
 This is just my experiment make game using LOVE2D but the logic of the game entirely written in C. This approach deppend in ffi from LuaJIT, so if your LOVE2D Doesn't have LuaJIT enabled you can't run this.
 
-#### use LOVE2D 11.5 is recomented.
+#### use LOVE2D 11.5 is recomended.
 
 ## Runing The Game
 
@@ -36,3 +36,5 @@ and just run it:
 ```bash
 love .
 ```
+
+HAVE FUN!
